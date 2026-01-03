@@ -74,4 +74,5 @@ if __name__ == '__main__':
     # Chạy server. debug=True giúp auto-reload khi sửa code
     print("[-] Server đang chạy tại http://127.0.0.1:5000")
     print("[-] Lưu ý: Chạy với quyền Administrator/Sudo để xem đầy đủ tên tiến trình hệ thống.")
-    app.run(debug=True, port=5000)
+    # app.run(debug=True, port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000) # Để có thể chạy được trên Docker
